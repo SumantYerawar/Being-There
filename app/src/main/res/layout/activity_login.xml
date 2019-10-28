@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:background="@color/Purple"
+    android:layout_centerVertical="true">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/teamwork"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:padding="15dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/adminbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/teacherbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:id="@+id/studentbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="15dp"
+            android:hint="Username"
+            android:id="@+id/username"
+            android:drawableLeft="@drawable/ic_person_"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:background="@drawable/background"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="20dp"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:background="@drawable/background"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:onClick="loginFunction"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:background="@drawable/button"/>
+    </LinearLayout>
+
+</RelativeLayout>

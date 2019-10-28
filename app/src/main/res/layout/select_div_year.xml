@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg: TE-A,TE-B..."
+        android:layout_margin="20dp"
+        android:id="@+id/selectYear"
+        android:background="@drawable/background"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg: DBMS,CN..."
+        android:layout_below="@+id/selectYear"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/selectLec"
+        android:background="@drawable/background"
+        android:padding="15dp"/>
+</RelativeLayout>

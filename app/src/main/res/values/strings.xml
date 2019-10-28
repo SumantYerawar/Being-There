@@ -1,0 +1,25 @@
+<resources>
+    <array name="periods">
+        <item>Select Lecture</item>
+        <item>CN</item>
+        <item>DBMS</item>
+        <item>SEPM</item>
+        <item>ISEE</item>
+        <item>SDL</item>
+        <item>SDLL</item>
+        <item>CNL</item>
+        <item>DBMSL</item>
+    </array>
+    <array name="Department">
+        <item>select Division</item>
+        <item>SE-A</item>
+        <item>SE-B</item>
+        <item>SE-C</item>
+        <item>TE-A</item>
+        <item>TE-B</item>
+        <item>TE-C</item>
+    </array>
+
+    <string name="app_name">Being There 2</string>
+
+</resources>
